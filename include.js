@@ -18,7 +18,7 @@ function includeHTML(id, file) {
 }
 
 includeHTML("header", "header.html");
-includeHTML("footer", "footer.html");
+includeHTML("banana", "footer.html");
 
 // Color auto
 function highlightActiveLink() {
