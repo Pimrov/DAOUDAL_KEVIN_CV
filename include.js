@@ -36,3 +36,12 @@ const inc = (id, f) => fetch(f).then(r => r.ok ? r.text() : Promise.reject(f)).t
 Promise.all([inc("header","header.html"), inc("banana","footer.html")])
   .then(() => { const p = location.pathname.split("/").pop(); document.querySelectorAll("nav a").forEach(a => a.getAttribute("href") === p && a.classList.add("active")); })
   .catch(console.error);
+
+  
+const toggleButton = document.getElementById('theme-toggle');
+const body = document.body;
+
+toggleButton.addEventListener('click', () => {
+  body.classList.toggle('dark-theme');
+});
+``

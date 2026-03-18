@@ -2,40 +2,63 @@
 <html lang="fr">
 
 <head>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
 </head>
 
 <body>
-    <!-- Page Contact -->
-    <div id="header"></div>
+  <!-- Page Contact -->
+  <div id="header"></div>
 
-    <main>
-        <h2>Contact</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum alias cumque accusantium in eos eaque, voluptas facere! Ut repudiandae dolore in nisi provident, reprehenderit, tenetur eveniet molestiae doloremque quod at?
-        Illo quasi possimus odio! Necessitatibus eius dolore sint praesentium est tempora dicta ut quaerat doloremque at earum recusandae quam vel iure deserunt, excepturi magni quo saepe? Ea aperiam fugiat voluptas? </p>
-        <form action="" method="get" class="form-example">
-  <div class="contact-box">
-  <form action="" method="get" class="form-example">
-    <div class="form-example">
-      <label for="name">Entrez votre nom&nbsp;: </label>
-      <input type="text" name="name" id="name" required />
+  <main>
+
+
+    <h2>Contact</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+
+    <form action="" method="get" class="contact-grid">
+
+      <label for="name">Entrez votre nom&nbsp;:</label>
+      <input type="text" name="name" id="name" required>
+
+      <label for="pet-select">Ton perso préféré:</label>
+      <select name="pets" id="pet-select">  
+        <option value="dog">Luffy</option>
+        <option value="cat">Zorro</option>
+        <option value="parrot">Nami</option>
+        <option value="goldfish">Usopp</option>
+        <option value="hamster">Sanji</option>
+        <option value="spider">Robin</option>
+        <option value="goldfish">Franky</option>
+        <option value="goldfish">Brook</option>
+        <option value="goldfish">Jinbe</option>
+        <option value="hamster">Vogue Merry</option>
+        <option value="hamster">Thousand Sunny</option>
+      </select>
+
+      <label for="email">Entrez votre e-mail&nbsp;:</label>
+      <input type="email" name="email" id="email" required>
+      <p class="story-title">Pourquoi c'est ton préféré ?</p>
+      
+      <label for="story">Pourquoi c'est ton préféré&nbsp;:</label>
+      <textarea id="story" name="story" rows="5"></textarea>
+
+      <div class="checkbox">
+        <input type="checkbox" id="cgv" name="cgv" required>
+        <label for="cgv">CGV</label>
+      </div>
+
+      <input type="submit" value="S'abonner !">
+
+    </form>
+
     </div>
-    <div class="form-example">
-      <label for="email">Entrez votre e-mail&nbsp;: </label>
-      <input type="email" name="email" id="email" required />
-    </div>
-    <div class="form-example">
-      <input type="submit" value="S'abonner !" />
-    </div>
-  </form>
-</div>
-</form>
-    </main>
-    <div id="banana"></div>
-    <script src="include.js"></script>
+    </form>
+  </main>
+  <div id="banana"></div>
+  <script src="include.js"></script>
 </body>
 
 </html>
