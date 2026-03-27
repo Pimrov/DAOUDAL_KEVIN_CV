@@ -2,41 +2,62 @@
 <html lang="fr">
 
 <head>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
 </head>
 
 <body>
-    <!-- Page Contact -->
-    <div id="header"></div>
+  <!-- Page Contact -->
+  <div id="header"></div>
 
-    <main>
-        <h2>Contact 22222</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum alias cumque accusantium in eos eaque, voluptas facere! Ut repudiandae dolore in nisi provident, reprehenderit, tenetur eveniet molestiae doloremque quod at?
-        Illo quasi possimus odio! Necessitatibus eius dolore sint praesentium est tempora dicta ut quaerat doloremque at earum recusandae quam vel iure deserunt, excepturi magni quo saepe? Ea aperiam fugiat voluptas? </p>
-        <form action="" method="get" class="form-example">
-  <div class="contact-box">
-  <form action="" method="get" class="form-example">
-    <div class="form-example">
-      <label for="name">Entrez votre nom&nbsp;: </label>
-      <input type="text" name="name" id="name" required />
-    </div>
-    <div class="form-example">
-      <label for="email">Entrez votre e-mail&nbsp;: </label>
-      <input type="email" name="email" id="email" required />
-    </div>
-    <div class="form-example">
-      <input type="submit" value="S'abonner !" />
-    </div>
-  </form>
-</div>
-</form>
-test 2
-    </main>
-    <div id="footer"></div>
-    <script src="include.js"></script>
+  <main>
+
+    <h2>Contact</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+
+    <form action="" method="get" class="contact-grid">
+
+      <label for="name">Entrez votre nom&nbsp;:</label>
+      <input type="text" name="name" id="name" required>
+
+      <label for="op-select">Ton perso préféré:</label>
+      <select name="op" id="op-select">
+        <option value="Luffy">Luffy</option>
+        <option value="Zorro">Zorro</option>
+        <option value="Nami">Nami</option>
+        <option value="Usopp">Usopp</option>
+        <option value="Sanji">Sanji</option>
+        <option value="Robin">Robin</option>
+        <option value="Franky">Franky</option>
+        <option value="Brook">Brook</option>
+        <option value="Jinbe">Jinbe</option>
+        <option value="Vogue Merry">Vogue Merry</option>
+        <option value="Thousand Sunny">Thousand Sunny</option>
+      </select>
+
+      <label for="email">Entrez votre e-mail&nbsp;:</label>
+      <input type="email" name="email" id="email" required>
+
+      <p class="story-title">Pourquoi c'est ton préféré ?</p>
+
+      <textarea id="story" name="story" rows="5"></textarea>
+
+      <div class="checkbox">
+        <input type="checkbox" id="cgv" name="cgv" required>
+        <label for="cgv">CGV</label>
+      </div>
+
+      <input type="submit" value="S'abonner !">
+
+    </form>
+
+  </main>
+
+  <div id="banana"></div>
+  <script src="include.js"></script>
+
 </body>
 
 </html>
